@@ -8,20 +8,26 @@
 </head>
 <body>
     <h1>Age Calculator</h1>
-    <h3>Enter your birth year</h3><br/>
-        <input type = "number" id = "yearofbirth">
-        <button id = "button">Calculate</button><br/><br/>
-        <label id = "resultMsg"></label>
-        <script src = "ageCalculator.js">
-            
-        </script>
+    <p id = "p1">Enter your year of birth</p>
+    <input id = "yearInput"><br/>
+    <p id ="p2">Enter your month of birth</p>
+    <input id = "monthInput"><br/>
+    <p id = "p3">Enter your date of birth</p>
+    <input id = "dateInput"><br/><br/>
+    <button id = "button">Submit</button><br/><br/>
+    <p id = "yearOutput"></p><br/>
+    <p id = "hourOutput"></p>
+    <script src = "ageCalculator.js"></script>
     <h3 id = "result"></h3>
     <style>
+        h1{
+            color: black;
+            text-shadow: -1px 1px white;
+        }
         body{
             text-align: center;
             background-color: rgb(152, 28, 209);
             color:blanchedalmond;
-            text-shadow: -1px 1px black;
         }
         input{
             background-color: blanchedalmond;
@@ -29,6 +35,14 @@
         }
         button{
             background-color:blanchedalmond;
+        }
+        #p1,
+        #p2,
+        #p3{
+            background-color: black;
+        }
+        p{
+            text-shadow: -1px 1px black;
         }
     </style>
 </body>
